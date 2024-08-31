@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./Bajaj.jpg" type="image/x-icon">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav>
@@ -42,7 +44,7 @@
                 </div>
                 <!-- Add more slides as needed -->
             </div>
-    
+
             <!-- Navigation buttons -->
             <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
             <a class="next" onclick="changeSlide(1)">&#10095;</a>
@@ -60,23 +62,30 @@
         <!-- Why Become a Dealer Section -->
         <section id="why-become-dealer">
             <h2>Why Become a Bajaj Dealer?</h2>
-            <p>Becoming a Bajaj dealer offers numerous benefits, including brand recognition by aligning with a reputable and well-known brand in the industry. You will also enjoy high demand for Bajaj products across various markets, ongoing support from our dedicated team to help you succeed, and growth opportunities through continuous innovation and market expansion.</p>
+            <p>Becoming a Bajaj dealer offers numerous benefits, including brand recognition by aligning with a
+                reputable and well-known brand in the industry. You will also enjoy high demand for Bajaj products
+                across various markets, ongoing support from our dedicated team to help you succeed, and growth
+                opportunities through continuous innovation and market expansion.</p>
         </section>
         <!--Information-->
-    <section id="info">
-        <h2>What You Will Get After Applying</h2>
-        <p>By applying to become a Bajaj dealer, you will gain access to exclusive dealership rights for Bajaj products in your region. You will also benefit from comprehensive training programs for you and your staff, marketing and promotional support to help grow your business, and access to a network of other Bajaj dealers with support from our team. Additionally, you will receive competitive pricing and incentives based on performance.</p>
-    </section>
-    
-    
+        <section id="info">
+            <h2>What You Will Get After Applying</h2>
+            <p>By applying to become a Bajaj dealer, you will gain access to exclusive dealership rights for Bajaj
+                products in your region. You will also benefit from comprehensive training programs for you and your
+                staff, marketing and promotional support to help grow your business, and access to a network of other
+                Bajaj dealers with support from our team. Additionally, you will receive competitive pricing and
+                incentives based on performance.</p>
+        </section>
 
-   </main>
-    
+
+
+    </main>
+
     <!-- Dealership Application Form -->
     <section id="dealership">
         <h2>Dealership Application Form</h2>
         <div class="form-divider"></div>
-        <form id="contact-form" >
+        <form id="contact-form">
             <div class="form-row">
                 <div class="form-group">
                     <label for="name">Full Name <i style="color:red">*</i></label>
@@ -91,7 +100,7 @@
                     <input type="tel" id="contact" name="contact" required placeholder="Enter Your Mobile Number">
                 </div>
             </div>
-        
+
             <div class="form-row">
                 <div class="form-group">
                     <label for="gender">Gender <i style="color:red">*</i></label>
@@ -102,19 +111,54 @@
                         <option value="Other">Other</option>
                     </select>
                 </div>
-               
+
                 <div class="form-group">
                     <label for="state">State <i style="color:red">*</i></label>
                     <select name="state" id="state" required>
                         <option value="select">Select Your State</option>
-                        <option value="select">Assam</option>
-                        <option value="select">Bihar</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and
+                            Diu</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Ladakh">Ladakh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
 
                         <!-- Add state options here -->
                     </select>
                 </div>
             </div>
-        
+
             <div class="form-row">
                 <div class="form-group">
                     <label for="city">City <i style="color:red">*</i>
@@ -126,28 +170,34 @@
                     <input type="text" id="pincode" name="pincode" required placeholder="Enter Your Pincode">
                 </div>
             </div>
-        
+
             <div class="form-row">
                 <div class="form-group">
                     <label for="comments">Message </label>
                     <textarea id="comments" name="comments" placeholder="Enter Your Message"></textarea>
                 </div>
             </div>
-        
+
             <button type="submit">Apply Now</button>
         </form>
-        
+
     </section>
 
     <!-- Information Section -->
     <section id="about">
         <h2>Why Choose Bajaj?</h2>
         <p class="content" id="about-content">
-            Securing a Bajaj dealership offers numerous advantages, including access to a well-established and trusted brand with a strong market presence. As a dealer, you benefit from Bajaj's extensive marketing support, training programs, and a comprehensive product range, which can attract a broad customer base. The dealership provides a lucrative opportunity for revenue generation through vehicle sales and after-sales services. Additionally, Bajaj’s commitment to innovation ensures that you offer cutting-edge products, enhancing your competitive edge. With a robust support system and a reputable brand, a Bajaj dealership can significantly boost your business prospects in the automotive industry.
+            Securing a Bajaj dealership offers numerous advantages, including access to a well-established and trusted
+            brand with a strong market presence. As a dealer, you benefit from Bajaj's extensive marketing support,
+            training programs, and a comprehensive product range, which can attract a broad customer base. The
+            dealership provides a lucrative opportunity for revenue generation through vehicle sales and after-sales
+            services. Additionally, Bajaj’s commitment to innovation ensures that you offer cutting-edge products,
+            enhancing your competitive edge. With a robust support system and a reputable brand, a Bajaj dealership can
+            significantly boost your business prospects in the automotive industry.
         </p>
         <button class="read-more" onclick="toggleContent()">Read More</button>
     </section>
-    
+
 
     <!-- Footer -->
     <footer>
@@ -164,9 +214,10 @@
     </footer>
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> -->
     <!-- <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script> -->
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>
 
 <!--
