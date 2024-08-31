@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bajaj Dealership Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Bajaj.jpg" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+
+        <div class="brand-logo">
+            <img src="./Bajaj.jpg" alt="">
+            <!-- <p href="#">Bajaj DealerShip</p> -->
+        </div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#dealership">Dealership</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="slider">
+            <div class="slides">
+                <!-- Each slide -->
+                <div class="slide">
+                    <img src="./wh-banner.png" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="./otg-new-changes1.png" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="./cp1.jpg" alt="Image 3">
+                </div>
+                <div class="slide">
+                    <img src="./cp3.jpg" alt="Image 3">
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+    
+            <!-- Navigation buttons -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </section>
+    <!-- Header/Banner Section -->
+    <header>
+        <div class="header-text">
+            <h1>Apply for Bajaj Dealership</h1>
+            <p>Join the Bajaj family and accelerate your business growth.</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Why Become a Dealer Section -->
+        <section id="why-become-dealer">
+            <h2>Why Become a Bajaj Dealer?</h2>
+            <p>Becoming a Bajaj dealer offers numerous benefits, including brand recognition by aligning with a reputable and well-known brand in the industry. You will also enjoy high demand for Bajaj products across various markets, ongoing support from our dedicated team to help you succeed, and growth opportunities through continuous innovation and market expansion.</p>
+        </section>
+        <!--Information-->
+    <section id="info">
+        <h2>What You Will Get After Applying</h2>
+        <p>By applying to become a Bajaj dealer, you will gain access to exclusive dealership rights for Bajaj products in your region. You will also benefit from comprehensive training programs for you and your staff, marketing and promotional support to help grow your business, and access to a network of other Bajaj dealers with support from our team. Additionally, you will receive competitive pricing and incentives based on performance.</p>
+    </section>
+    
+    
+
+   </main>
+    
+    <!-- Dealership Application Form -->
+    <section id="dealership">
+        <h2>Dealership Application Form</h2>
+        <div class="form-divider"></div>
+        <form id="contact-form" >
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Full Name <i style="color:red">*</i></label>
+                    <input type="text" id="name" name="name" required placeholder="Enter Your Full Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Id <i style="color:red">*</i></label>
+                    <input type="email" id="email" name="email" required placeholder="Enter Your Email Id">
+                </div>
+                <div class="form-group">
+                    <label for="contact">Mobile Number <i style="color:red">*</i></label>
+                    <input type="tel" id="contact" name="contact" required placeholder="Enter Your Mobile Number">
+                </div>
+            </div>
+        
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="gender">Gender <i style="color:red">*</i></label>
+                    <select name="gender" id="gender" required>
+                        <option value="select">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+               
+                <div class="form-group">
+                    <label for="state">State <i style="color:red">*</i></label>
+                    <select name="state" id="state" required>
+                        <option value="select">Select Your State</option>
+                        <option value="select">Assam</option>
+                        <option value="select">Bihar</option>
+
+                        <!-- Add state options here -->
+                    </select>
+                </div>
+            </div>
+        
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="city">City <i style="color:red">*</i>
+                    </label>
+                    <input type="text" id="city" name="city" required placeholder="Enter Your City">
+                </div>
+                <div class="form-group">
+                    <label for="pincode">Pin Code <i style="color:red">*</i></label>
+                    <input type="text" id="pincode" name="pincode" required placeholder="Enter Your Pincode">
+                </div>
+            </div>
+        
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="comments">Message </label>
+                    <textarea id="comments" name="comments" placeholder="Enter Your Message"></textarea>
+                </div>
+            </div>
+        
+            <button type="submit">Apply Now</button>
+        </form>
+        
+    </section>
+
+    <!-- Information Section -->
+    <section id="about">
+        <h2>Why Choose Bajaj?</h2>
+        <p class="content" id="about-content">
+            Securing a Bajaj dealership offers numerous advantages, including access to a well-established and trusted brand with a strong market presence. As a dealer, you benefit from Bajaj's extensive marketing support, training programs, and a comprehensive product range, which can attract a broad customer base. The dealership provides a lucrative opportunity for revenue generation through vehicle sales and after-sales services. Additionally, Bajaj’s commitment to innovation ensures that you offer cutting-edge products, enhancing your competitive edge. With a robust support system and a reputable brand, a Bajaj dealership can significantly boost your business prospects in the automotive industry.
+        </p>
+        <button class="read-more" onclick="toggleContent()">Read More</button>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="contact-info">
+            <p>BajajElectronics Ltd.</p>
+            <p>Address: [Office Address]</p>
+            <p>Phone: [Phone Number]</p>
+            <p>Email: [Email Address]</p>
+        </div>
+        <div class="social-media">
+            <!-- Social media icons here -->
+        </div>
+        <p>&copy; 2024 BajajElectronicsDealership. All rights reserved.</p>
+    </footer>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script> -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!--
+    SecurityToken:"65ea9690-0fe0-43e6-916a-ed6281753b27 " ,
+-->
