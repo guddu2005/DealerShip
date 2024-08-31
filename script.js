@@ -93,7 +93,7 @@ async function sendEmail(e) {
     };
 
     try {
-        const response = await fetch('http://localhost:8080/send', options);
+        const response = await fetch('https://sendemail-4j5q.onrender.com/send', options);
         if (!response.ok) {
             throw new Error("HTTP status " + response.status);
         }
