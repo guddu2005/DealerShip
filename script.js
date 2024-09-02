@@ -138,7 +138,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
+// //Scroll doen to bottom
+// document.getElementById('scrollButton').addEventListener('click', function() {
+//     window.scrollTo({
+//         top: document.body.scrollHeight,
+//         behavior: 'smooth' // Optional for smooth scrolling
+//     });
+// });
 
 
 
