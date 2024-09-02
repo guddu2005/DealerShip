@@ -14,35 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-//Slider Section
-let slideIndex = 0;
-const slides = document.querySelectorAll('.slide');
-
-function showSlide(index) {
-    if (index >= slides.length) {
-        slideIndex = 0; // Loop back to the first slide
-    } else if (index < 0) {
-        slideIndex = slides.length - 1; // Loop to the last slide
-    } else {
-        slideIndex = index;
-    }
-
-    // Move the slides container
-    const slidesContainer = document.querySelector('.slides');
-    slidesContainer.style.transform = `translateX(-${slideIndex * 100}%)`;
-}
-
-function changeSlide(step) {
-    showSlide(slideIndex + step);
-}
-
-// Automatically change slides every 5 seconds
-setInterval(() => {
-    changeSlide(1);
-}, 5000);
-
-// Initialize the slider
-showSlide(slideIndex);
 
 
 //add more button
@@ -72,9 +43,6 @@ async function sendEmail(e) {
     var pincode = document.getElementById("pincode").value;
     var contact = document.getElementById("contact").value;
 
-
-
-    
     const options = {
         method: 'POST',
         headers: {
