@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bajaj Dealership Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Bajaj.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+
+        <div class="brand-logo">
+            <img src="./Bajaj.jpg" alt="">
+            <!-- <p href="#">Bajaj DealerShip</p> -->
+        </div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="./dealership.html">Dealership</a></li>
+            <li><a href="./current.html">Current Status</a></li>
+            <li><a href="./franchise.html">Franchise Prerequisite</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#support">Customer Care</a></li>
+
+        </ul>
+    </nav>
+    <section id="video-section">
+        <div class="head-video">
+            <video src="./WhatsApp Video 2024-09-02 at 22.25.13_9666f47f.mp4" controls autoplay loop muted playsinline id="header-video"></video>
+        </div>
+    </section>
+    <!-- Header/Banner Section -->
+    <header>
+        <div class="header-text">
+            <h1>Apply for Bajaj Dealership</h1>
+            <p>Join the Bajaj family and accelerate your business growth.</p>
+        </div>
+    </header>
+    <!-- Dealership Application Form -->
+    <section id="dealership">
+        <h2>Dealership Application Form</h2>
+        <div class="form-divider"></div>
+        <form id="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Full Name <i style="color:red">*</i></label>
+                    <input type="text" id="name" name="name" required placeholder="Enter Your Full Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Id <i style="color:red">*</i></label>
+                    <input type="email" id="email" name="email" required placeholder="Enter Your Email Id">
+                </div>
+                <div class="form-group">
+                    <label for="contact">Mobile Number <i style="color:red">*</i></label>
+                    <input type="tel" id="contact" name="contact" required placeholder="Enter Your Mobile Number">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="gender">Gender <i style="color:red">*</i></label>
+                    <select name="gender" id="gender" required>
+                        <option value="select">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="state">State <i style="color:red">*</i></label>
+                    <select name="state" id="state" required>
+                        <option value="select">Select Your State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and
+                            Diu</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Ladakh">Ladakh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+
+                        <!-- Add state options here -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="city">City <i style="color:red">*</i>
+                    </label>
+                    <input type="text" id="city" name="city" required placeholder="Enter Your City">
+                </div>
+                <div class="form-group">
+                    <label for="pincode">Pin Code <i style="color:red">*</i></label>
+                    <input type="text" id="pincode" name="pincode" required placeholder="Enter Your Pincode">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="comments">Message </label>
+                    <textarea id="comments" name="comments" placeholder="Enter Your Message"></textarea>
+                </div>
+            </div>
+
+            <button type="submit">Apply Now</button>
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contact-info">
+            <p>BajajElectronics Ltd.</p>
+            <p>Address:Bajaj Electricals , One Unity Center ,27th Floor, senapati Bapat Marg, Prabhadevi(W) , Mumbai- 400013</p>
+            <p>Phone: +91 91343 21654</p>
+            <p>Email: bajajelectricals07@gmail.com</p>
+        </div>
+        <div class="social-media">
+            <!-- Social media icons here -->
+        </div>
+        <p>&copy; 2024 BajajElectronicsDealership. All rights reserved.</p>
+    </footer>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--
+    SecurityToken:"65ea9690-0fe0-43e6-916a-ed6281753b27 " ,
+-->

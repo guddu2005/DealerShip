@@ -14,6 +14,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+//popup section
+document.addEventListener('DOMContentLoaded', function() {
+    var popup = document.getElementById('popup');
+    var closeButton = document.getElementById('close-button');
+
+    // Show the popup when the page loads
+    popup.style.display = 'block';
+
+    // Close the popup when the close button is clicked
+    closeButton.addEventListener('click', function() {
+        popup.style.display = 'none';
+    });
+
+    // Optionally close the popup if the user clicks outside of it
+    window.addEventListener('click', function(event) {
+        if (event.target == popup) {
+            popup.style.display = 'none';
+        }
+    });
+});
 
 
 //add more button
@@ -42,6 +62,8 @@ async function sendEmail(e) {
     var gender = document.getElementById("gender").value;
     var pincode = document.getElementById("pincode").value;
     var contact = document.getElementById("contact").value;
+    var contact = document.getElementById("occupation").value;
+
 
     const options = {
         method: 'POST',
@@ -57,6 +79,7 @@ async function sendEmail(e) {
             gender:gender,
             pincode:pincode,
             contact:contact,
+            occupation:occupation
         })
     };
 
@@ -78,6 +101,40 @@ const formData = document.getElementById("contact-form");
 formData.addEventListener('submit', sendEmail);
 
 
+//form submitted popup
+document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('contact-form');
+    var popup = document.getElementById('popupform');
+    var closeButton = document.getElementById('close-button-form');
+
+    // Show the popup
+    function showPopup() {
+        popup.style.display = 'block';
+    }
+
+    // Hide the popup
+    function hidePopup() {
+        popup.style.display = 'none';
+    }
+
+    // Handle form submission
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        showPopup();
+    });
+
+    // Close the popup when clicking on the close button
+    closeButton.addEventListener('click', function() {
+        hidePopup();
+    });
+
+    // Close the popup if the user clicks outside of it
+    window.addEventListener('click', function(event) {
+        if (event.target === popup) {
+            hidePopup();
+        }
+    });
+});
 
 
 
@@ -113,31 +170,3 @@ formData.addEventListener('submit', sendEmail);
 
 
 
-
-// (function(){
-    // emailjs.init({
-        // publicKey: "uPZM0NCgypJR9DWbz",
-    //   }); // Replace with your EmailJS user ID
-// })();
-
-// function sendEmail() {
-    // const form = document.getElementById('contact-form');
-    // const formData = {
-        // name: form.name.value,
-        // email: form.email.value,
-        // contact: form.contact.value,
-        // gender: form.gender.value,
-        // state: form.state.value,
-        // city: form.city.value,
-        // pincode: form.pincode.value,
-        // comments: form.comments.value,
-    // };
-
-    // emailjs.send("service_7anmyvl", "template_xfx64fp", formData)
-        // .then(response => {
-            // alert('Message sent successfully!');
-        // })
-        // .catch(error => {
-            // alert('Failed to send message: ' + error);
-        // });
-// }

@@ -19,11 +19,11 @@
         </div>
         <div class="hamburger" id="hamburger">&#9776;</div>
         <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="#about">About Us</a></li>
-            <li><a href="#dealership">Dealership</a></li>
-            <li><a href="#currentstatus">Current Status</a></li>
-            <li><a href="#dealership">Dealership</a></li>
+            <li><a href="./dealership.html">Dealership</a></li>
+            <li><a href="./current.html">Current Status</a></li>
+            <li><a href="./franchise.html">Franchise Prerequisite</a></li>
             <li><a href="#contact">Contact Us</a></li>
             <li><a href="#support">Customer Care</a></li>
 
@@ -31,7 +31,7 @@
     </nav>
     <section id="video-section">
         <div class="head-video">
-            <video src="./WhatsApp Video 2024-09-01 at 21.34.08_558780b9.mp4" controls autoplay loop muted playsinline id="header-video"></video>
+            <video src="./WhatsApp Video 2024-09-02 at 22.25.13_9666f47f.mp4" controls autoplay loop muted playsinline id="header-video"></video>
         </div>
     </section>
     <!-- Header/Banner Section -->
@@ -78,6 +78,14 @@
     </main>
 
     <!-- Dealership Application Form -->
+     <!--Form Submitted notification-->
+     <div id="popupform" class="popupform">
+        <div class="popup-content-form">
+            <span class="close-button" id="close-button-form">&times;</span>
+            <h2>Your message has been sent!</h2>
+            <p>Your message has been sent to the dealer. They will contact you soon.</p>
+        </div>
+    </div>
     <section id="dealership">
         <h2>Dealership Application Form</h2>
         <div class="form-divider"></div>
@@ -106,6 +114,10 @@
                         <option value="Female">Female</option>
                         <option value="Other">Other</option>
                     </select>
+                </div>
+                <div class="form-group">
+                    <label for="occupation">Occupation <i style="color:red">*</i></label>
+                    <input type="text" name="occupation" id="occupation" pattern="Current Occupation" required>
                 </div>
 
                 <div class="form-group">

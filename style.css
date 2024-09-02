@@ -70,46 +70,63 @@ nav ul li a:hover {
     padding-top: 36px;
     height: auto;
 }
-/* Slider Styles */
-.slider {
+/* Popup Styles */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
-    overflow: hidden;
-  /* Account for fixed navbar */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 1000; /* Sit on top */
 }
 
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
 }
 
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.slide img {
-    width: 100%;
-    vertical-align: middle;
-}
-
-.slider .prev, .slider .next {
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
     cursor: pointer;
-    position: absolute;
-  
-    transform: translateY(-50%);
-    color: #333;
-    font-size: 2rem;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 50%;
+}
+/* form popup */
+.popupform {
+    display: none; /* Hidden by default */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 1000; /* Sit on top */
+    overflow: auto; /* Enable scroll if needed */
 }
 
-.slider .prev {
-    left: 10px;
+.popup-content-form {
+    background-color: #fff;
+    margin: 15% auto; /* Centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Adjust based on screen size */
+    max-width: 600px; /* Optional: max width */
+    position: relative;
 }
 
-.slider .next {
-    right: 10px;
-}
+
 
 /* Header/Banner Section */
 header {
