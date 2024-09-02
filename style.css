@@ -62,7 +62,14 @@ h2{
 nav ul li a:hover {
     background-color: #003d7a;
 }
-
+#video-section{
+    padding:0 0.5rem;
+}
+#header-video{
+    width: 100%;
+    padding-top: 36px;
+    height: auto;
+}
 /* Slider Styles */
 .slider {
     width: 100%;
@@ -110,7 +117,7 @@ header {
     position: relative;
     text-align: center;
     color: #fff;
-    background: url('./cp1.jpg') no-repeat center center/cover;
+    background: url('./1725119766770.jpg') no-repeat center center/cover;
     padding: 100px 20px;
    
 }
@@ -133,7 +140,7 @@ header .header-text p {
 /* General Section Styles */
 section {
     padding: 2rem;
-    margin: 2rem 0;
+    margin:  0;
     background: #f4f4f4;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -209,6 +216,9 @@ button[type="submit"]:hover {
 #about-content.expanded {
     max-height: 1000px; /* Enough height to show all content */
 }
+li{
+    margin-left: 10px;
+}
 
 .read-more {
     background-color: #0056b3;
@@ -241,10 +251,10 @@ footer p {
 @media (max-width: 768px) {
     header {
    
-        background: url('./cp1.jpg') no-repeat center center/cover;
+        background: url('./1725119766770.jpg') no-repeat center center/cover;
         background-size: cover; /* Ensures the image covers the entire area without overflow */
         background-position: center center; /* Centers the background image */
-        height: 100vh; /* Adjusts the height to be 100% of the viewport height */
+        height: auto;/* Adjusts the height to be 100% of the viewport height */
         width: 100%; /* Ensures the width is 100% of the viewport width */
         overflow: hidden; /* Hides any overflow */
         display: flex;
@@ -316,8 +326,10 @@ footer p {
         position: relative;
         text-align: center;
         color: #fff;
-        background: url('./cp1.jpg') no-repeat center center/cover;
+        background: url('./1725119766770.jpg') no-repeat center center/cover;
         padding: 100px 20px;
+        height: auto;
+        width: 100%;
     }
     nav ul {
         top: 50px;
